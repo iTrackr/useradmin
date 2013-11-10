@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+		<link rel="stylesheet" href="/stylesheets/bootstrap-responsive.min.css">
+		<link rel="stylesheet" href="/stylesheets/jquery-ui.min.css">
+		<script type="text/javascript" src="/javascripts/bootstrap.min.js"></script>
+		<script type="text/javascript" src="/javascripts/jquery.min.js"></script>
+		<script type="text/javascript" src="/javascripts/jquery-ui.min.js"></script>
+	</head>
+	<body>
+		<div class="row-fluid">
+			<div class="span2"> &nbsp; </div>
+			<div class="span8">
+				<a class="btn btn-primary" href="/logout"> Logout </a>
+				<form method="post" action="/generate_key">
+					<input type="text" value="<%= key %>" disabled="disabled">
+					<input type="submit" class="btn btn-primary" value="Regenerate key">
+				</form>
+				
+			</div>
+			<div class="span2"> &nbsp; </div>
+		</div>
+	</body>
+</html>
